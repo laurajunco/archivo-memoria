@@ -4,7 +4,7 @@ $(document).ready(function(){
   var height = $( window ).height();
 
   var topMargin = $(".top-menu").height() + 50;
-  var numImagenes = 26;
+  var numImagenes = 2;
   var cuenta = 1;
   var r = 100;
 
@@ -14,8 +14,14 @@ $(document).ready(function(){
 
     if ( cuenta < numImagenes ) {
     //crear div y obtener dimensiones
-     var div = $("<img/>");
-     div.attr("src","img/" + cuenta + ".png");
+    var div = $("<img/>");
+
+
+    div.load("img/" + cuenta + ".png", function(){
+      div.attr("src","img/" + cuenta + ".png");
+      console.log(div.height());
+    });
+
 
      //variables de posicion aleatoria
      var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
