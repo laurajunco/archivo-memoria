@@ -34,7 +34,7 @@ body {
 .imagen-archivo {
   position: absolute;
   background-color: blue;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .top-menu {
