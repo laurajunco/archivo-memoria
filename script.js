@@ -30,7 +30,7 @@ $(document).ready(function(){
          div.attr("src",src);
 
          //dividir tamano
-         var r = 1.2 + (Math.random() * 4);
+         var r = 1.1 + (Math.random() * 3.5);
          div.width(imgWidth / r);
          div.height(imgHeight / r);
 

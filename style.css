@@ -24,6 +24,8 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'bluu' !important;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
