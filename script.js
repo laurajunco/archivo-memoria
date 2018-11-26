@@ -4,7 +4,7 @@ $(document).ready(function(){
   var height = $( window ).height();
 
   var topMargin = $(".top-menu").height() + 50;
-  var numImagenes = 2;
+  var numImagenes = 51;
   var cuenta = 1;
   var r = 100;
 
@@ -12,40 +12,52 @@ $(document).ready(function(){
 
   function addImg() {
 
+    //solo mientras se cargan las imagenes
     if ( cuenta < numImagenes ) {
-    //crear div y obtener dimensiones
-    var div = $("<img/>");
 
+      var src = "img/" + cuenta + ".png"
 
-    div.load("img/" + cuenta + ".png", function(){
-      div.attr("src","img/" + cuenta + ".png");
-      console.log(div.height());
-    });
+      var img = new Image();
+      img.src = src;
 
+      //cuando carga la imagen
+      img.onload = function() {
+        var imgWidth = this.width;
+        var imgHeight = this.height;
 
-     //variables de posicion aleatoria
-     var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
-     var left =  Math.floor(Math.random() * (width - div.width()));
+        //crear div y obtener dimensiones
+         var div = $("<img/>");
+         div.attr("src",src);
 
-     //agregar classes y definir posicion
-     div.addClass("imagen-archivo");
-     div.addClass("drag");
-     div.css({top: top, left: left});
+         //dividir tamano
+         var r = 1 + Math.floor(Math.random() * 4);
+         div.width(imgWidth / r);
+         div.height(imgHeight / r);
 
-     //agregar el elemento al documento
-     $("body").append(div);
+         //variables de posicion aleatoria
+         var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
+         var left =  Math.floor(Math.random() * (width - div.width()));
 
-     //aumenta la cuenta
-     cuenta++;
+         //agregar classes y definir posicion
+         div.addClass("imagen-archivo");
+         div.addClass("drag");
+         div.css({top: top, left: left});
 
-     //activar draggable
-     $( ".drag" ).draggable();
+         //agregar el elemento al documento
+         $("body").append(div);
 
-     ///poner imagen en primer plano cuando el mouse pasa encima
-     $(".imagen-archivo").mouseover(function() {
-       $(this).css("z-index", r);
-       r += 100;
-     });
+         //aumenta la cuenta
+         cuenta++;
+
+         //activar draggable
+         $( ".drag" ).draggable();
+
+         ///poner imagen en primer plano cuando el mouse pasa encima
+         $(".imagen-archivo").mouseover(function() {
+           $(this).css("z-index", r);
+           r += 100;
+         });
+      }
     }
   }
 });
