@@ -3,7 +3,7 @@ $(document).ready(function(){
   var width = $( window ).width();
   var height = $( window ).height();
 
-  var numImagenes = 10;
+  var numImagenes = 25;
   var cuenta = 0;
   var r = 100;
 
