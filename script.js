@@ -1,16 +1,31 @@
 $(document).ready(function(){
   var width = $( window ).width();
   var height = $( window ).height();
+  var numImagenes = 10;
+  var cuenta = 0;
 
-  setInterval(addText, 1000);
+  setInterval(addImg, 500);
 
-  
-   var txt = $("<p></p>").text("Test text.");
+  function addImg() {
 
-   var top = Math.floor((Math.random() * width) + 1 - txt.width());
-   var left = Math.floor((Math.random() * height) + 1 - txt.height());
-   txt.addClass("imagen-archivo");
-   txt.css({top: top, left: left});
-   $("body").append(txt);
+    if ( cuenta < numImagenes ) {
+      w = 50 + Math.floor((Math.random() * 300));
+      h = 50 + Math.floor((Math.random() * 300));
+
+     var div = $("<div></div>");
+     div.width(w);
+     div.height(h);
+
+     var top =  Math.floor(Math.random() * (height - div.height()));
+     var left =  Math.floor(Math.random() * (width - div.width()));
+
+     div.addClass("imagen-archivo");
+     div.css({top: top, left: left});
+     $("body").append(div);
+
+     cuenta++;
+     console.log(cuenta);
+    }
+  }
 
 });
