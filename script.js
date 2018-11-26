@@ -48,16 +48,16 @@ $(document).ready(function(){
 
          //aumenta la cuenta
          cuenta++;
-
-         //activar draggable
-         $( ".drag" ).draggable();
-
-         ///poner imagen en primer plano cuando el mouse pasa encima
-         $(".imagen-archivo").mouseover(function() {
-           $(this).css("z-index", r);
-           r += 100;
-         });
       }
+
+      //activar draggable
+      $( ".drag" ).draggable();
+
+      ///poner imagen en primer plano cuando el mouse pasa encima
+      $(".imagen-archivo").mouseover(function() {
+        $(this).css("z-index", r);
+        r += 100;
+      });
     }
   }
 });
