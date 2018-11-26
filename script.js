@@ -4,8 +4,8 @@ $(document).ready(function(){
   var height = $( window ).height();
 
   var topMargin = $(".top-menu").height() + 50;
-  var numImagenes = 25;
-  var cuenta = 0;
+  var numImagenes = 26;
+  var cuenta = 1;
   var r = 100;
 
   setInterval(addImg, 300);
@@ -13,14 +13,9 @@ $(document).ready(function(){
   function addImg() {
 
     if ( cuenta < numImagenes ) {
-      //ancho y alto aleatorios
-      w = 50 + Math.floor((Math.random() * 300));
-      h = 50 + Math.floor((Math.random() * 300));
-
     //crear div y obtener dimensiones
-     var div = $("<div></div>");
-     div.width(w);
-     div.height(h);
+     var div = $("<img/>");
+     div.attr("src","img/" + cuenta + ".png");
 
      //variables de posicion aleatoria
      var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
