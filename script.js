@@ -3,11 +3,12 @@ $(document).ready(function(){
   var width = $( window ).width();
   var height = $( window ).height();
 
+  var topMargin = $(".top-menu").height() + 50;
   var numImagenes = 25;
   var cuenta = 0;
   var r = 100;
 
-  setInterval(addImg, 500);
+  setInterval(addImg, 300);
 
   function addImg() {
 
@@ -22,7 +23,7 @@ $(document).ready(function(){
      div.height(h);
 
      //variables de posicion aleatoria
-     var top =  Math.floor(Math.random() * (height - div.height()));
+     var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
      var left =  Math.floor(Math.random() * (width - div.width()));
 
      //agregar classes y definir posicion
@@ -44,8 +45,6 @@ $(document).ready(function(){
        $(this).css("z-index", r);
        r += 100;
      });
-
     }
   }
-
 });
