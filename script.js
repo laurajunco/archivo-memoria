@@ -4,7 +4,7 @@ $(document).ready(function(){
   var height = $( window ).height();
 
   var topMargin = $(".top-menu").height() + 50;
-  var numImagenes = 51;
+  var numImagenes = 5;
   var cuenta = 1;
   var r = 100;
 
@@ -26,16 +26,22 @@ $(document).ready(function(){
         var imgHeight = this.height;
 
         //crear div y obtener dimensiones
-         var div = $("<img/>");
-         div.attr("src",src);
+         var div = $("<div> </div>")
+         var img = $("<img/>");
+         var marco = $("<div> </div>");
+
+         img.attr("src",src);
+         marco.addClass("marco-imagen");
 
          //dividir tamano
          var r = 1.1 + (Math.random() * 3.5);
          div.width(imgWidth / r);
-         div.height(imgHeight / r);
+         div.height((imgHeight / r) + 20);
+
 
          //variables de posicion aleatoria
          var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
+
          var left =  Math.floor(Math.random() * (width - div.width()));
 
          //agregar classes y definir posicion
@@ -43,8 +49,12 @@ $(document).ready(function(){
          div.addClass("drag");
          div.css({top: top, left: left});
 
+         div.append(marco);
+         div.append(img);
+
          //agregar el elemento al documento
          $("body").append(div);
+
 
          //aumenta la cuenta
          cuenta++;

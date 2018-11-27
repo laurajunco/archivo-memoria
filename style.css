@@ -32,11 +32,21 @@ body {
   background-color: black !important;
 }
 
+.marco-imagen {
+  height: 20px;
+  background-color: #c5c7c6;
+  background-image: url("icons/grey-buttons.png")
+}
+
 
 .imagen-archivo {
   position: absolute;
   background-color: blue;
-  border: 2px solid white;
+}
+
+.imagen-archivo img {
+  height: 100% - 20px;
+  width: 100%;
 }
 
 .imagen-archivo:hover {
