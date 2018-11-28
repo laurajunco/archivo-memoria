@@ -4,7 +4,7 @@ $(document).ready(function(){
   var height = $( window ).height();
 
   var topMargin = $(".top-menu").height() + 50;
-  var numImagenes = 5;
+  var numImagenes = 51;
   var cuenta = 1;
   var r = 100;
 

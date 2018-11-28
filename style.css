@@ -35,7 +35,15 @@ body {
 .marco-imagen {
   height: 20px;
   background-color: #c5c7c6;
-  background-image: url("icons/grey-buttons.png")
+  background-image: url("icons/grey_buttons.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 54px;
+}
+
+.imagen-archivo:hover .marco-imagen{
+  background-color: #4343ff;
+  background-image: url("icons/blue_buttons.png");
 }
 
 
@@ -47,10 +55,6 @@ body {
 .imagen-archivo img {
   height: 100% - 20px;
   width: 100%;
-}
-
-.imagen-archivo:hover {
-  border: 3px solid #00ff00;
 }
 
 .top-menu {
