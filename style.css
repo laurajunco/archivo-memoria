@@ -4,6 +4,7 @@ html, body {
   font-family: "Times New Roman", Times, serif !important;
   height: 100%;
   overflow: hidden;
+
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 
 .secondary-page {
   background: linear-gradient(to bottom, #00FFFF 0%, #FF1493 100%);
+  overflow: scroll;
 }
 
 .marco-imagen {
@@ -47,6 +49,7 @@ body {
     width: 100%;
     height: 120px;
     top: 0;
+    position:fixed;
     padding: 40px 20px;
     z-index: 90000;
     background-color: transparent;
@@ -72,7 +75,7 @@ a:hover {
 }
 
 .contenido {
-  margin-top: 50px;
+  margin-top: 180px;
 }
 .contenido p {
   color: white;
