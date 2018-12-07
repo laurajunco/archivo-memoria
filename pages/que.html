@@ -12,11 +12,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 
-    <title>¿que és?</title>
+    <title>--QUÉ-ES--</title>
+    <script>
+      (function titleMarquee() {
+      document.title = document.title.substring(1)+document.title.substring(0,1);
+      setTimeout(titleMarquee, 200);
+      })();
+
+      function myFunction() {
+      alert("Thanks you for visiting me ! I hope you enjoyed your stay !");
+      }
+      </script>
 
   </head>
 
-  <body>
+  <body class="secondary-page">
       <div class ="top-menu">
         <div class = "container-fluid">
           <div class="row align-items-center">
@@ -28,5 +38,14 @@
           </div>
         </div>
       </div>
-  </body>
+      <div class="container contenido">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet porttitor dictum. Pellentesque tempus quam ligula. Morbi vel pharetra ex, nec tincidunt risus. Pellentesque scelerisque faucibus eros quis cursus. Donec nec commodo erat. Duis eget scelerisque tortor, id ultrices ligula. Nam pulvinar elit in finibus ultrices. Proin aliquam lacinia odio consequat pretium. Nulla ultricies molestie ligula, sed elementum mi faucibus varius. Nulla at dignissim eros, non posuere tellus. Aliquam ante libero, convallis sed mauris id, dictum vulputate elit. </p>
+
+        <p>Suspendisse eget magna eget odio euismod molestie ut at nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean posuere sit amet magna vel semper. Quisque nec turpis quis nisi iaculis tincidunt non id odio. Praesent sit amet magna a mauris egestas maximus vel in tellus. Ut quis blandit mauris. Etiam feugiat lobortis nunc quis viverra. Etiam facilisis justo vel est ultrices pretium. Proin sit amet neque tortor. Aenean non fermentum lorem. Donec interdum massa a vulputate consequat. Mauris non elit mollis, ultrices ante a, vulputate turpis.</p>
+        <p>Etiam nisi lectus, vulputate at eros ut, egestas mattis lacus. Nullam vel luctus purus. Pellentesque elementum lectus id consequat luctus. Cras maximus nisi non odio pretium, quis bibendum felis malesuada. Sed a nulla laoreet lorem pulvinar dignissim. Donec et est finibus, auctor elit in, malesuada nibh. Quisque id malesuada libero, at interdum risus. Donec dictum ante eu suscipit tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Maecenas et purus ligula. Duis vitae leo gravida, laoreet dui at, tristique orci. Suspendisse at facilisis urna. Nunc varius sem eu tellus faucibus faucibus. Vivamus posuere varius egestas. Maecenas vel faucibus risus. Cras eleifend porta varius. Nulla mollis feugiat nisi. Donec suscipit vehicula augue et tincidunt. Pellentesque lectus mi, iaculis quis risus quis, imperdiet accumsan quam. Morbi aliquet metus nisl, ut malesuada nibh dignissim et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean sit amet purus convallis, egestas libero eget, hendrerit ex. Integer consectetur libero quis lacus rhoncus euismod. Pellentesque sit amet justo eu mi porta pulvinar. </p>
+        <p>Nullam sit amet fringilla eros, in efficitur risus. Quisque pulvinar tempor dui, a commodo neque cursus et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et dapibus magna. Nulla ac mi porta velit sagittis pharetra. Vivamus vel ipsum eleifend, interdum enim non, tincidunt ante. Pellentesque eu posuere metus. Phasellus vitae lorem tortor. Suspendisse potenti.</p>
+    </body>
+      </div>
+    </body>
 </html>
