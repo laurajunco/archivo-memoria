@@ -10,6 +10,10 @@ body {
   background-image: url("fondo.png");
 }
 
+.secondary-page {
+  background: linear-gradient(to bottom, #00FFFF 0%, #FF1493 100%);
+}
+
 .marco-imagen {
   height: 20px;
   background-color: #c5c7c6;
@@ -28,8 +32,6 @@ body {
   border: 2px solid #4343ff;
 }
 
-
-
 .imagen-archivo {
   position: absolute;
   background-color: blue;
@@ -44,7 +46,6 @@ body {
 
     width: 100%;
     height: 120px;
-    position: fixed;
     top: 0;
     padding: 40px 20px;
     z-index: 90000;
@@ -55,7 +56,7 @@ body {
 .top-menu .menu-item {
   text-align: center;
   border:2px solid #fff;
-  background-color: black;
+  background-color: transparent;
 
 }
 
@@ -68,4 +69,12 @@ a:link, a:visited, a:active{
 a:hover {
   color: blue !important;
   background-color: white !important;
+}
+
+.contenido {
+  margin-top: 50px;
+}
+.contenido p {
+  color: white;
+  font-size: 30px;
 }
