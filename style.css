@@ -112,6 +112,7 @@ a:hover .dotted {
 .contenido p {
   color: white;
   font-size: 30px;
+  text-align: center;
 }
 
 .footer {
