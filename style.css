@@ -20,6 +20,33 @@ body {
   overflow: scroll;
 }
 
+.red-to-blue {
+  background: linear-gradient(to right, #e7583c 0%, #264692 100%);
+  overflow: scroll;
+}
+
+.cyan-page {
+  background: #66fffb;
+  max-width: 80%;
+
+}
+
+.img-descargas{
+  height: 90px;
+  width: auto;
+}
+
+.file {
+  position: fixed;
+}
+
+
+.folder {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
 .marco-imagen {
   height: 20px;
   background-color: #c5c7c6;
