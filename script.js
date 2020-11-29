@@ -8,7 +8,7 @@ $(document).ready(function(){
   var cuenta = 0;
   var r = 100;
 
-  setInterval(addImg, 300);
+  setInterval(addImg, 500);
 
   function addImg() {
 
