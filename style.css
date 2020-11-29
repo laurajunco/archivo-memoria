@@ -44,9 +44,66 @@ a:hover {
 }
 
 a:visited {
-  color: black;
   text-decoration: none;
 }
+
+/* participar */
+.participar-container {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.descargar, .subir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+.descargar h1, .subir h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.descargar p, .subir p {
+  margin-top: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.descargar {
+  background: black;
+  color:#EEEEEC;
+  height: 50vh;
+}
+.subir {
+  background: #EEEEEC;
+  color: black;
+  height: 50vh;
+}
+
+
+.subir a {
+  color: black;
+}
+
+.descargar a {
+  color: #EEEEEC;
+}
+
+.subir a:hover, .descargar a:hover  {
+  background: -webkit-linear-gradient(15deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /*icons */
 .icons {
@@ -107,8 +164,6 @@ a:visited {
   to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
 }
 
-
-
 /* --- menu -- */
 .menu {
   position: relative;
@@ -125,6 +180,10 @@ a:visited {
   line-height: 1;
   top: 0;
   left: 0;
+}
+
+.home-logo.small {
+  font-size: 40px;
 }
 
 .mas-info {
