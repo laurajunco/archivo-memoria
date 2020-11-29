@@ -8,12 +8,13 @@ $(document).ready(function(){
   var cuenta = 0;
   var r = 100;
 
-  setInterval(addImg, 500);
+  setInterval(addImg, 700);
 
   function addImg() {
 
     //solo mientras se cargan las imagenes
     if (cuenta < numImagenes ) {
+      console.log(cuenta);
 
        //aumenta la cuenta
        cuenta++;
@@ -47,7 +48,7 @@ $(document).ready(function(){
            //variables de posicion aleatoria
            var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
 
-           var left =  Math.floor(Math.random() * (width - div.width()));
+           var left =  topMargin + Math.floor(Math.random() * (width - topMargin - div.width()));
 
            //agregar classes y definir posicion
            div.addClass("imagen-archivo");
@@ -68,7 +69,7 @@ $(document).ready(function(){
       ///poner imagen en primer plano cuando el mouse pasa encima
       $(".imagen-archivo").mouseover(function() {
         $(this).css("z-index", r);
-        r += 100;
+        r += 10;
       });
     }
   }
