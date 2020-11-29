@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
-  var topMargin = 50;
-  var numImagenes = 50;
-  var cuenta = 0;
+  var margin = 50;
+  var numImagenes = 93;
   var r = 100;
-
-  var width = $( window ).width() - topMargin;
-  var height = $( window ).height() - topMargin;
-
+  var minWidth = 65;
+  var Wwidth = $( window ).width() - margin;
+  var Wheight = $( window ).height() - margin;
+  var maxWidth = Wwidth/6;
+  var cuenta = 0;
 
   setInterval(addImg, 700);
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
        //aumenta la cuenta
        cuenta++;
 
-      var src = "img/" + cuenta + ".png"
+      var src = "img/" + cuenta + ".jpeg"
 
       var img = new Image();
       img.src = src;
@@ -40,15 +40,17 @@ $(document).ready(function(){
            marco.addClass("marco-imagen");
 
            //dividir tamano
-           var r = 1.1 + (Math.random() * 2);
-           div.width(imgWidth / r);
-           div.height((imgHeight / r) + 20);
+           minRatio = 500/minWidth;
+           maxRatio = 500/maxWidth;
 
+           var ratio = Math.random() * (minRatio - maxRatio) + maxRatio;
+
+           div.width(Math.floor(imgWidth / ratio));
+           div.height(Math.floor(imgHeight / ratio));
 
            //variables de posicion aleatoria
-           var top =  topMargin + Math.floor(Math.random() * (height - div.height()));
-
-           var left =  topMargin + Math.floor(Math.random() * (width - div.width()));
+           var top =  margin + Math.random() * (Wheight - div.height());
+           var left =  margin + Math.random() * (Wwidth - div.width());
 
            //agregar classes y definir posicion
            div.addClass("imagen-archivo");
