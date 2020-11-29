@@ -3,7 +3,7 @@ $(document).ready(function(){
   var width = $( window ).width();
   var height = $( window ).height();
 
-  var topMargin = $(".top-menu").height() + 50;
+  var topMargin = 50;
   var numImagenes = 50;
   var cuenta = 0;
   var r = 100;
