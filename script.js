@@ -3,30 +3,47 @@ $(document).ready(function(){
   var margin = 50;
   var numImagenes = 93;
   var r = 100;
-  var minWidth = 65;
+  var minWidth = 85;
   var Wwidth = $( window ).width() - margin;
   var Wheight = $( window ).height() - margin;
   var maxWidth = Wwidth/6;
   var cuenta = 0;
+  var numbers = [];
+  var mostrarCuantas = 30;
+
+  for (var i = 0; i < numImagenes; i++) {
+    numbers [i] = i+1;
+  }
+
+  shuffleArray(numbers)
+
+
+  //organizar numeros
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
 
   setInterval(addImg, 700);
 
   function addImg() {
 
     //solo mientras se cargan las imagenes
-    if (cuenta < numImagenes ) {
+    if (cuenta < mostrarCuantas ) {
 
        //aumenta la cuenta
        cuenta++;
 
-      var src = "img/" + cuenta + ".jpeg"
+      var src = "img/" + numbers[cuenta] + ".jpeg"
 
       var img = new Image();
       img.src = src;
 
       //cuando carga la imagen
       img.onload = function() {
-        if (cuenta < numImagenes ) {
+        if (cuenta < mostrarCuantas ) {
 
           var imgWidth = this.width;
           var imgHeight = this.height;
