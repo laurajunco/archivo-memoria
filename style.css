@@ -8,14 +8,72 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: EEEEEC;
+  background-color: #EEEEEC;
+  font-size: 18px;
 }
 
 body {
-  padding: 30px 50px;
+  padding: 40px 50px;
   position: relative;
 }
 
+.doppelganger {
+  font-family: "doppelganger";
+}
+
+.cyrene {
+  font-family: "cyrene";
+}
+
+.work {
+  font-family: "work";
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.home-logo {
+  color: black;
+  font-size: 80px;
+  line-height: 0.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mas-info {
+  height: 180px;
+  width: 180px;
+  background-image: url("assets/mas-info.svg");
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: rotating 100s linear infinite;
+}
+
+.mas-info:hover {
+  background-image: url("assets/mas-info-black.svg");
+}
 
 .marco-imagen {
   height: 20px;
@@ -62,3 +120,31 @@ body {
 }
 
 
+/* animaciones */
+@-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/* Tipografias */
+@font-face {
+  font-family: "cyrene";
+  src: url("fonts/Cyrene.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "doppelganger";
+  src: url("fonts/Doppelganger.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "work";
+  src:  url('fonts/WorkSans.ttf')  format('truetype'),
+}
+
+  
+  
