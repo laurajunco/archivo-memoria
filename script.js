@@ -40,7 +40,7 @@ $(document).ready(function(){
            marco.addClass("marco-imagen");
 
            //dividir tamano
-           var r = 1.1 + (Math.random() * width/200);
+           var r = 1.1 + (Math.random() * 2);
            div.width(imgWidth / r);
            div.height((imgHeight / r) + 20);
 
