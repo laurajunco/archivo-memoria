@@ -57,10 +57,10 @@ a:visited {
 .home-logo {
   color: black;
   font-size: 80px;
-  line-height: 0.8;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: absolute;
+  line-height: 1;
   top: 0;
   left: 0;
 }
@@ -87,8 +87,8 @@ a:visited {
 
 .restart:hover {
   transform: rotate(-350deg);
-  height: 80px;
-  width: 80px;
+  height: 75px;
+  width: 75px;
 }
 
 .fuera {
@@ -101,13 +101,17 @@ a:visited {
   right: 0;
 }
 
-.fuera:hover, .contacto:hover .participar:hover {
+.fuera:hover, .contacto:hover, .participar:hover {
   text-decoration: underline;
-  color: white;
+  background: -webkit-linear-gradient(45deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-logo:hover {
-  color: white;
+  background: -webkit-linear-gradient(45deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contacto {
