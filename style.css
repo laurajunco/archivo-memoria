@@ -137,53 +137,37 @@ a:visited {
   letter-spacing: 1px;
 }
 
-
 .mas-info:hover {
   background-image: url("assets/mas-info-black.svg");
 }
 
 .marco-imagen {
-  height: 20px;
-  background-color: #c5c7c6;
-  background-image: url("icons/grey_buttons.png");
+  height: 18px;
+  background-color: white;
+  background-image: url("assets/black-bot.svg");
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 54px;
+  background-position: right 10px center;
+  background-size: 29px;
 }
 
 .imagen-archivo:hover .marco-imagen{
-  background-color: #4343ff;
-  background-image: url("icons/blue_buttons.png");
+  background-color: black;
+  background-image: url("assets/white-bot.svg");
+
 }
 
-.imagen-archivo:hover img {
-  border: 2px solid #4343ff;
+.imagen-archivo:hover {
+  cursor: pointer;
 }
 
 .imagen-archivo {
   position: absolute;
-  background-color: blue;
+  background-color:#EEEEEC;
 }
 
 .imagen-archivo img {
-  height: 100% - 20px;
+  height: calc(100% - 18px);;
   width: 100%;
-}
-
-.item-fixed{
-  top: 90%;
-  left:40px;
-  position:fixed;
-  display: block;
-  text-align: center;
-  border-top:4px solid #fff;
-  border-left:4px solid #fff;
-  border-right:4px solid #c5c7c6;
-  border-bottom:4px solid #c5c7c6;
-  box-shadow:  2px 2px 0 2px black;
-  background-color: #e4e3e4;
-  margin: 0 20px;
-  padding: 3px;
 }
 
 
