@@ -3,7 +3,7 @@ $(document).ready(function(){
   var margin = 50;
   var numImagenes = 93;
   var r = 100;
-  var minWidth = 85;
+  var minWidth = 95;
   var Wwidth = $( window ).width() - margin;
   var Wheight = $( window ).height() - margin;
   var maxWidth = Wwidth/6;
