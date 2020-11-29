@@ -35,7 +35,7 @@ body {
 a {
   color: black;
   text-decoration: none;
-  z-index: 10000000000000000000000000000000000;
+  z-index: 100000000000000000000000000000000000000000000000000000000000000000000000;
 }
 
 a:hover {
@@ -169,6 +169,19 @@ a:visited {
 .imagen-archivo img {
   height: calc(100% - 18px);;
   width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid;
+  box-shadow: 0 0 black;
+  line-height: 12px;
+  padding: 5px 0;
+  font-size: 22px;
+  font-family: 'cyrene';
+  
 }
 
 

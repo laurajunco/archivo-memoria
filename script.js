@@ -1,12 +1,13 @@
 $(document).ready(function(){
 
-  var width = $( window ).width();
-  var height = $( window ).height();
-
   var topMargin = 50;
   var numImagenes = 50;
   var cuenta = 0;
   var r = 100;
+
+  var width = $( window ).width() - topMargin;
+  var height = $( window ).height() - topMargin;
+
 
   setInterval(addImg, 700);
 
@@ -14,7 +15,6 @@ $(document).ready(function(){
 
     //solo mientras se cargan las imagenes
     if (cuenta < numImagenes ) {
-      console.log(cuenta);
 
        //aumenta la cuenta
        cuenta++;
@@ -46,9 +46,9 @@ $(document).ready(function(){
 
 
            //variables de posicion aleatoria
-           var top =  topMargin + Math.floor(Math.random() * (height - topMargin - div.height()));
+           var top =  topMargin + Math.floor(Math.random() * (height - div.height()));
 
-           var left =  topMargin + Math.floor(Math.random() * (width - topMargin - div.width()));
+           var left =  topMargin + Math.floor(Math.random() * (width - div.width()));
 
            //agregar classes y definir posicion
            div.addClass("imagen-archivo");
