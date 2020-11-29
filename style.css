@@ -48,6 +48,67 @@ a:visited {
   text-decoration: none;
 }
 
+/*icons */
+.icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.icons .faces {
+  position: absolute;
+  width: 80px;
+  top: 40%;
+  left: 40%;
+  -webkit-animation: left-right 5s linear infinite alternate-reverse;
+}
+
+.icons .estrella {
+  position: absolute;
+  width: 20px;
+  -webkit-animation: moveX 50s linear 0s infinite alternate, moveY 53s linear 0s infinite alternate;
+}
+
+.icons .estrella-grande {
+  position: absolute;
+  width: 80px;
+  top: 60%;
+  left: 70%;
+  -webkit-animation: rotating 10s linear infinite;
+}
+
+.icons .disco {
+  position: absolute;
+  width: 60px;
+  top: 20%;
+  left: 80%;
+  -webkit-animation: rotating 5s linear infinite alternate-reverse;
+}
+
+.icons .bola-1{
+  position: absolute;
+  width: 60px;
+  -webkit-animation: moveX 200s linear 0s infinite alternate, moveY 30s linear 0s infinite alternate;
+}
+
+.icons .bola-2{
+  position: absolute;
+  width: 20px;
+  top: 40%;
+  left: 40%;
+  -webkit-animation: myOrbit 6s linear  infinite;
+}
+
+
+@-webkit-keyframes myOrbit {
+  from { -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+
+
 /* --- menu -- */
 .menu {
   position: relative;
@@ -193,6 +254,21 @@ a:visited {
 	to {
 		-webkit-transform: rotate(360deg);
 	}
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } 
+  to { left: 90%; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } 
+  to { top: 100%; }
+}
+
+@-webkit-keyframes left-right {
+  from { left:40% } 
+  to { left: 5%; }
 }
 
 /* Tipografias */
