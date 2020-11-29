@@ -47,64 +47,6 @@ a:visited {
   text-decoration: none;
 }
 
-/* participar */
-.participar-container {
-  position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.descargar, .subir {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 3px;
-}
-
-.descargar h1, .subir h1 {
-  font-size: 5vw;
-  text-align: center;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.descargar p, .subir p {
-  margin-top: 0;
-  font-size: 22px;
-  text-align: center;
-}
-
-.descargar {
-  background: black;
-  color:#EEEEEC;
-  height: 50vh;
-}
-.subir {
-  background: #EEEEEC;
-  color: black;
-  height: 50vh;
-}
-
-
-.subir a {
-  color: black;
-}
-
-.descargar a {
-  color: #EEEEEC;
-}
-
-.subir a:hover, .descargar a:hover  {
-  background: -webkit-linear-gradient(15deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-
 /*icons */
 .icons {
   position: absolute;
@@ -222,7 +164,7 @@ a:visited {
   right: 0;
 }
 
-.fuera:hover, .contacto:hover, .participar:hover {
+.fuera:hover, .contacto:hover, .participar:hover, .terminos:hover {
   text-decoration: underline;
   background: -webkit-linear-gradient(45deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
   -webkit-background-clip: text;
@@ -242,6 +184,15 @@ a:visited {
   bottom: 0;
   right: 0;
   letter-spacing: 1px;
+}
+
+.terminos {
+  color: #EEEEEC;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  letter-spacing: 0.5px;
 }
 
 .participar {
@@ -342,3 +293,104 @@ a:visited {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+
+
+/* pag participar */
+/* participar */
+.participar-container {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.descargar, .subir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 3px;
+}
+
+.descargar h1, .subir h1 {
+  font-size: 5vw;
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.descargar p, .subir p {
+  margin-top: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.descargar {
+  background: black;
+  color:#EEEEEC;
+  height: 50vh;
+}
+
+.subir {
+  background: #EEEEEC;
+  color: black;
+  height: 50vh;
+}
+
+.subir a {
+  color: black;
+}
+
+.descargar a {
+  color: #EEEEEC;
+}
+
+.subir a:hover, .descargar a:hover  {
+  background: -webkit-linear-gradient(15deg, #FDCE50, #E66622, #E63D1A, #BC3F56, #9097F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.icons-parti img {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+}
+
+.icons-parti .estrella-1 {
+  position: absolute;
+  width: 80px;
+  top: 20%;
+  left: 70%;
+  -webkit-animation: rotating 10s linear infinite;
+}
+
+.icons-parti .estrella-2 {
+  position: absolute;
+  width: 80px;
+  top: 54%;
+  left: 50%;
+  -webkit-animation: rotating 30s linear infinite reverse;
+}
+
+.icons-parti .estrella-4 {
+  position: absolute;
+  width: 20px;
+  top: 54%;
+  left: 20%;
+  -webkit-animation: myOrbit 15s linear infinite reverse;
+}
+
+.icons-parti .estrella-3 {
+  position: absolute;
+  width: 20px;
+  top: 54%;
+  left: 20%;
+  -webkit-animation: moveX 200s linear 0s infinite alternate, moveY 30s linear 0s infinite alternate;
+}
+
+
