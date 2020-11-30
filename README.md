@@ -1,2 +1,11 @@
-# archivo-memoria
-Página web para el proyecto de memoria y archivo
+# En ninguna parte
+
+Un ejercicio de permanencia
+
+Como a toda la generación nacida en los noventas, la adolescencia nos cayó encima con el acceso ilimitado a una red de internet de banda ancha. Además de descargar cantidades absurdas de música por Ares (pirata, obviamente), y a costa de saturar el disco duro con una enorme e inevitable ola de virus de computadora como muchos adolescentes de los 2000, nos dedicamos a tomar fotos, leer algunos blogs y pasar incalculables horas, hay que admitirlo, viendo videos documentales de YouTube. Al mismo tiempo, creamos una cantidad infinita de carpetas con momentos sobre nosotros y nuestros seres más queridos que muchas veces alojamos a modo de álbumes digitales en plataformas como Hi5, MySpace, o poco después, Facebook.
+
+En ese momento no lo sabíamos, pero nuestra forma de relacionarnos con el internet había cambiado: estar frente a la pantalla se convirtió en el poder de aislarse y no implicarse en las cosas, valores tan fuertes en nuestra sociedad, sin mencionar la velocidad y la impermanencia de nuestros tiempos que nos corresponde. Pero, ¿qué ganamos y perdemos con lo digital? ¿qué es lo que se transmite y hereda en tiempos digitales? Nos costaba creer que nuestra generación era lo que todos decían de ella: una generación en donde la falta por reconocerse en el presente, en su época, y en sus valores arrebatados son sus cualidades principales. Al contrario, decidimos que esos también son rasgos de un espíritu revolucionario y un pensamiento crítico, fuertemente mediado por lo artístico, que nos permiten pararnos en el mundo con los ojos bien abiertos.
+
+¿Cómo una era tan marcada por la individualidad construye sobre lo colectivo y no a pesar de ello? Nosotras elegimos el archivo colectivo de fotos digitales de nuestros amigos, más de 400 imágenes acompañadas de textos cortos (Hola, Instagram ☺), para ver cómo una generación podía ayudar a reconstruir esos recuerdos de los que no hay registro más que digital. Que no son bonitos y que no solo hablan de los caprichos de nuestra memoria, sino de cómo nos paramos en el pasado —más allá de una nostalgia contemplativa— para tomar decisiones en el presente, y aspirar a una permanencia en el más próximo futuro.
+
+Un proyecto inacabado por Laura Junco y María José Herrera. Gracias a todos nuestros maravillosos amigos ☺ que nos envían sus memorias.
