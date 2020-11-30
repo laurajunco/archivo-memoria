@@ -619,4 +619,38 @@ a:visited {
   .descargar h1, .subir h1 {
     font-size: 10vw;
   }
+
+  body {
+    padding: 20px 20px 30px 10px;
+  }
+
+  .footer {
+    line-height: 10px;
+    padding: 2px 0;
+    font-size: 20px;
+  }
+
+  .info-pag .menu .home-logo-img,
+  .fuera-pag .menu .home-logo-img {
+    top: 20px;
+    left: 10px;
+  }
+
+  .info-pag .menu .mas-info,
+  .fuera-pag .menu .mas-info{
+    bottom: 30px;
+    left: 10px;
+  }
+
+  .info-pag .menu .fuera,
+  .fuera-pag .menu .fuera {
+    right: 20px;
+  }
+
+  .info-pag .menu .contacto,
+  .fuera-pag .menu .contacto  {
+    bottom: 20px;
+    right: 20px;
+  }
+
 }
