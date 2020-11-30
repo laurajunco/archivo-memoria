@@ -1,6 +1,6 @@
 # En ninguna parte
 
-Un ejercicio de permanencia
+### Un ejercicio de permanencia
 
 Como a toda la generación nacida en los noventas, la adolescencia nos cayó encima con el acceso ilimitado a una red de internet de banda ancha. Además de descargar cantidades absurdas de música por Ares (pirata, obviamente), y a costa de saturar el disco duro con una enorme e inevitable ola de virus de computadora como muchos adolescentes de los 2000, nos dedicamos a tomar fotos, leer algunos blogs y pasar incalculables horas, hay que admitirlo, viendo videos documentales de YouTube. Al mismo tiempo, creamos una cantidad infinita de carpetas con momentos sobre nosotros y nuestros seres más queridos que muchas veces alojamos a modo de álbumes digitales en plataformas como Hi5, MySpace, o poco después, Facebook.
 
