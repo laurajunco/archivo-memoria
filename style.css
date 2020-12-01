@@ -669,6 +669,10 @@ display: block;
     right: 20px;
   }
 
+  .home-logo.small {
+    font-size: 30px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -717,11 +721,19 @@ display: block;
   }
 
   .descargar p, .subir p {
-    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
   }
   
   .descargar h1, .subir h1 {
-    font-size: 10vw;
+    font-size: 14vw;
+    margin: 10px;
+  }
+
+  .terminos {
+    font-size: 16px;
   }
 
   body {
@@ -755,6 +767,14 @@ display: block;
   .fuera-pag .menu .contacto  {
     bottom: 15px;
     right: 15px;
+  }
+
+  .home-logo.small {
+    font-size: 20px;
+  }
+
+  .contact-container a {
+    width: 80%;
   }
 
 }
