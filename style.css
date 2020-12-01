@@ -670,3 +670,91 @@ display: block;
   }
 
 }
+
+@media (max-width: 500px) {
+  .fuera-pag .text p {
+    font-size: 16px;
+  }
+
+  .info-pag .text p {
+    font-size: 16px;
+  }
+
+  .home-logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mas-info {
+    height: 70px;
+    width: 70px;
+  }
+
+  .home-logo {
+    font-size: 25px;
+  }
+
+  .restart {
+    height: 40px;
+    width: 40px;
+  }
+
+  .participar {
+    font-size: 18px;
+    max-width: 150px;
+  }
+
+  .participar .doppelganger {
+    font-size: 18px;
+  }
+
+  .contacto {
+    font-size: 19px;
+  }
+
+  .fuera {
+    font-size: 18px;
+  }
+
+  .descargar p, .subir p {
+    font-size: 18px;
+  }
+  
+  .descargar h1, .subir h1 {
+    font-size: 10vw;
+  }
+
+  body {
+    padding: 15px 15px 20px 10px;
+  }
+
+  .footer {
+    line-height: 10px;
+    padding: 2px 0;
+    font-size: 20px;
+  }
+
+  .info-pag .menu .home-logo-img,
+  .fuera-pag .menu .home-logo-img {
+    top: 15px;
+    left: 10px;
+  }
+
+  .info-pag .menu .mas-info,
+  .fuera-pag .menu .mas-info{
+    bottom: 20px;
+    left: 10px;
+  }
+
+  .info-pag .menu .fuera,
+  .fuera-pag .menu .fuera {
+    right: 15px;
+  }
+
+  .info-pag .menu .contacto,
+  .fuera-pag .menu .contacto  {
+    bottom: 15px;
+    right: 15px;
+  }
+
+}
